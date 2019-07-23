@@ -49,7 +49,9 @@ const typography = new Typography(Wordpress2016);
 if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles();
 }
-
+if (process.env.NODE_ENV !== 'production') {
+  typography.injectStyles();
+}
 export default typography;
 export const rhythm = typography.rhythm;
 export const scale = typography.scale;
